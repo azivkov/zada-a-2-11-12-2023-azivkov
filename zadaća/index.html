@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Cat Cafe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @font-face {
+            font-family: catfont;
+            src: url(fonts/meows-font/Meows-VGWjy.ttf);
+        }
+
+        main h1  {
+            font-family: catfont;
+            color: rgb(247, 165, 78);
+            font-size: 5rem;
+            margin: 0 0;
+            padding-top: 20px;
+            text-shadow: 0.3rem 0.3rem 0.5rem rgb(100, 65, 1);
+        }
+
+        main section {
+            background-color: rgb(238, 229, 215);
+        }
+
+        main section p {
+            font-family: catfont;
+            font-style: italic;
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: rgb(95, 84, 84);
+        }
+    </style>
 </head>
+
 <body>
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <img src="images/cat-cafe-sign-free-png.png" alt="Cat Cafe logo" title="Cat Cafe logo" width="70">
+
+            </div>
+
+            <div class="links">
+                <ul>
+                <li><a href="index.html">Naslovna</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Pretražite stranicu" name="search" class="search"> <button type="submit" class="search"></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Dobrodošli u Cat Cafe!</h1>
+            <p>Ovo je cafe za sve ljubitelje mačaka - dođite i opustite se!</p>
+            <img src="images/image2.jpg" alt="Slika mačke u cat cafe-u" title="Cat cafe" width="991px">
+        </section>
+    </main>
+
+    <footer>
+        <br>
+        <a href="https://www.facebook.com" target="_blank" class="socmedia"><img src="images/facebook.png" alt="facebook" width="30"></a>
+        <a href="https://www.instagram.com" target="_blank" class="socmedia"><img src="images/instagram.png" alt="instagram" width="30"></a>
+        <a href="https://www.twitter.com" target="_blank" class="socmedia"><img src="images/twitter.png" alt="twitter" width="30"></a>
+        <a href="https://www.tiktok.com" target="_blank" class="socmedia"><img src="images/tik-tok.png" alt="tiktok" width="30"></a>
+        <a href="https://www.youtube.com" target="_blank" class="socmedia"><img src="images/youtube.png" alt="youtube" width="30"></a>
+    </footer>
     
 </body>
 </html>

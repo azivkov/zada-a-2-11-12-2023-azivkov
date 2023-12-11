@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usluge - Cat Cafe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        main {
+            padding-bottom: 100px;
+        }
+
+        main section:first-of-type p {
+            font-family: catfont;
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 10px 20px;
+            font-family: light;
+        }
+
+        h2 {
+            font-family: simplecat;
+            font-weight: 800;
+            font-size: 2rem;
+        }
+
+        .usluge {
+            background-image: url(images/cat-kitten-138468381-4cd82b91d7be45cb9f9aa8366e10bce45.jpg);
+        }
+
+        .usluge p {
+            font-weight: 700;
+        }
+
+        .bar,
+        .adopt,
+        .therapy {
+            text-align: justify;
+            padding-left: 120px;
+            padding-right: 120px;
+            font-size: 1.2rem;
+        }
+
+        .bar,
+        .therapy {
+            background-color: rgb(220, 197, 155);
+        }
+
+        .bar img,
+        .therapy img {
+            float: right;
+            padding-left: 15px;
+        }
+
+
+        .adopt .submit {
+            float: right;
+            margin-right: 50px;
+        }
+
+        .adopt img {
+            float: left;
+            padding-right: 15px;
+        }
+
+        .adopt h2 {
+            text-align: right;
+        }
+
+        input.submit {
+            margin-left: 50px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+        }
+
+        input.submit:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        .ostalo h2 {
+            font-size: 3em;
+            font-weight: 800;
+        }
+
+        .ostalo img,
+        .ostalo2 img {
+            display: inline-block;
+        }
+
+        img.cinemanights,
+        img.bookclub {
+            float: left;
+            padding: 10px;
+        }
+
+        img.artcorner,
+        img.behavior {
+            float: right;
+            padding: 10px;
+        }
+
+        img.cinemanights:hover,
+        img.artcorner:hover,
+        img.bookclub:hover,
+        img.behavior:hover {
+            opacity: 0.3;
+        }
+
+        p.cinemanights,
+        p.bookclub {
+            text-align: left;
+            font-family: catfont;
+            font-size: 1.5em;
+        }
+
+        p.artcorner,
+        p.behavior {
+            text-align: right;
+            font-family: catfont;
+            font-size: 1.5em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                <img src="images/cat-cafe-sign-free-png.png" alt="Cat Cafe logo" title="Cat Cafe logo" width="70">
+
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Naslovna</a></li>
+                    <li><a href="o-nama.html">O nama</a></li>
+                    <li><a href="usluge.html">Usluge</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Pretražite stranicu" name="search" class="search"> <button
+                        type="submit" class="search"></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="usluge">
+            <h1>Naše usluge</h1>
+            <p>U Cat Cafe-u nudimo raznolike usluge za sve mačkoljupce!</p>
+        </section>
+
+        <section class="bar">
+            <h2>Cat-uccino Bar <img src="images/60155376_867424070261813_1156155116764528640_n.jpg"
+                    alt="mačka uz capuccino" title="mačka uz cappuccino" width="300"></h2>
+            <p>Ova usluga pruža posjetiteljima priliku da uživaju u jedinstvenom iskustvu ispijanja kave ili čaja u
+                društvu mačaka. Cat-uccino Bar nudi posebne napitke i slastice s mačjim temama, poput "meowchiato" ili
+                "purrfect cake." Gosti mogu uživati u opuštenoj atmosferi, gledati kako mačke slobodno šeću oko njih, i
+                stvarati nezaboravne trenutke uz svoje krznene prijatelje.</p>
+            <input type="submit" class="submit" value="Posjeti nas">
+        </section>
+        <br><br><br>
+        <section class="adopt">
+            <h2>Adopt-a-Cat Program <img src="images/cat_hug-1024x1024.jpg" width="300" alt="osoba mazi mačku"
+                    title="osoba mazi mačku"></h2>
+            <p>Kroz ovu uslugu, Cat Cafe sudjeluje u odgovornom udomljavanju mačaka. Posjetitelji koji se zaljube u
+                određenu mačku tijekom posjeta imaju priliku izraziti svoj interes za udomljavanje. Cat Cafe surađuje s
+                lokalnim skloništima i udrugama za zaštitu životinja kako bi olakšao proces udomljavanja. Ova usluga ne
+                samo da pruža dom mačkama kojima je potreban, već i potiče svijest o važnosti udomljavanja životinja iz
+                skloništa.</p>
+            <input type="submit" class="submit" value="Pronađi pravu macu">
+        </section>
+        <br><br><br>
+        <section class="therapy">
+            <h2>Cat Therapy Session <img src="images/01_what-is-a-therapy-cat.jpg" width="300" alt="sretna mačka"
+                    title="sretna mačka"></h2>
+            <p>Ova usluga omogućuje posjetiteljima da rezerviraju vrijeme za posebnu seansu mačje terapije. Tijekom ove
+                seanse, posjetitelji imaju priliku opuštati se i smanjiti stres uz pomoć mačaka, poznatih po svojoj
+                terapeutskoj moći. Osoblje će pružiti informacije o svakoj mački, potičući interakciju i pružajući
+                gostima priliku da se povežu s ljubaznim, krznenim terapeutima.</p>
+            <input type="submit" class="submit" value="Rezerviraj termin">
+        </section>
+
+        <section class="ostalo">
+            <h2>Ostale usluge</h2>
+            <img src="images/71041527_2430018617245698_2059807298015985664_o.jpg" width="300" alt="kino s mačkama" class="cinemanights">
+            <img src="images/5-23-3-20-14-16-23m.jpg" width="300" alt="slika mačke" class="artcorner">
+            <br><br><br>
+            <p class="cinemanights">Cat Cinema Nights</p>
+            <br>
+            <p class="artcorner">Cat Art Corner</p>
+        </section>
+
+        <section class="ostalo2">
+            <img src="images/cat-reading-1240x852.jpg" width="300" alt="mačka čita knjigu" class="bookclub">
+            <img src="images/img-cat-behavior-header.jpg" width="300" alt="mačka prede" class="behavior">
+            <br><br><br><br><br><br>
+            <p class="bookclub">Cat Book Club</p>
+            <br>
+            <p class="behavior">Cat Behavior Classes</p>
+        </section>
+    </main>
+
+    <footer>
+        <br>
+        <a href="https://www.facebook.com" target="_blank" class="socmedia"><img src="images/facebook.png"
+                alt="facebook" width="30"></a>
+        <a href="https://www.instagram.com" target="_blank" class="socmedia"><img src="images/instagram.png"
+                alt="instagram" width="30"></a>
+        <a href="https://www.twitter.com" target="_blank" class="socmedia"><img src="images/twitter.png" alt="twitter"
+                width="30"></a>
+        <a href="https://www.tiktok.com" target="_blank" class="socmedia"><img src="images/tik-tok.png" alt="tiktok"
+                width="30"></a>
+        <a href="https://www.youtube.com" target="_blank" class="socmedia"><img src="images/youtube.png" alt="youtube"
+                width="30"></a>
+    </footer>
+
+</body>
+
+</html>

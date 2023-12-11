@@ -1,0 +1,116 @@
+body {
+    background-image: url(images/background2.png);
+    margin: 0 0;
+}
+
+header, main, footer  {
+    margin: 0 auto;
+    max-width: 991px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: simplecat;
+    src: url(fonts/oriental-cats/OrientalCatsLight-2OzB8.otf);
+}
+
+header {
+    height: 110px;
+    background-color: rgba(244, 206, 136, 0.768);
+    font-family: simplecat;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+div {
+    padding-top: 20px;
+}
+
+div.logo {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+}
+
+div.links {
+    display: inline-block;
+    width: 600px;
+}
+
+div.search {
+    display: inline-block;
+    width: 250px;
+    text-align: right;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.links ul a:hover {
+    color: orange;
+    background-color: white;
+}
+
+.links ul a:visited {
+    color: grey;
+}
+
+.links li {
+    display: inline;
+    padding-left: 70px;
+    font-size: 1.1em;
+}
+
+input.search {
+    width: 120px;
+}
+
+button.search {
+    background-image: url(images/arrow-right-circle-fill.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: rgba(244, 206, 136, 0.768);
+    height: 20px;
+    width: 20px;
+    border: 0px;
+}
+
+footer {
+    height: 80px;
+    background-color: rgba(128, 128, 128, 0.507);
+    margin-top: 0px;
+}
+
+a.socmedia:hover {
+    background-color: rgb(243, 199, 117);
+}
+
+@font-face {
+    font-family: catfont;
+    src: url(fonts/meows-font/Meows-VGWjy.ttf);
+}
+
+@font-face {
+    font-family: light;
+    src: url(fonts/hk-grotesk/HKGrotesk-Light.otf);
+}
+
+main {
+    background-color: rgb(238, 229, 215);
+}
+
+main h1 {
+    font-family: catfont;
+    color: rgb(95, 84, 84);
+    font-size: 4rem;
+    margin: 0 0;
+    padding-top: 20px;
+    text-align: center;
+}
