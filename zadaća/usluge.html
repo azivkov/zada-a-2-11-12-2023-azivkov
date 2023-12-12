@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        main {
-            padding-bottom: 100px;
-        }
 
-        main section:first-of-type p {
+        .usluge p {
             font-family: catfont;
             font-style: italic;
             font-size: 1.2rem;
+            font-weight: 700;
         }
 
         section {
@@ -32,10 +30,7 @@
 
         .usluge {
             background-image: url(images/cat-kitten-138468381-4cd82b91d7be45cb9f9aa8366e10bce45.jpg);
-        }
-
-        .usluge p {
-            font-weight: 700;
+            height: 190px;
         }
 
         .bar,
@@ -90,9 +85,10 @@
             font-weight: 800;
         }
 
-        .ostalo img,
-        .ostalo2 img {
+        section.cinema, section.art, section.book, section.behavior {
             display: inline-block;
+            height: 330px;
+            position: relative;
         }
 
         img.cinemanights,
@@ -102,7 +98,7 @@
         }
 
         img.artcorner,
-        img.behavior {
+        img.catbehavior {
             float: right;
             padding: 10px;
         }
@@ -110,22 +106,43 @@
         img.cinemanights:hover,
         img.artcorner:hover,
         img.bookclub:hover,
-        img.behavior:hover {
+        img.catbehavior:hover {
             opacity: 0.3;
         }
 
-        p.cinemanights,
-        p.bookclub {
+        p.cinemanights, p.bookclub {
             text-align: left;
             font-family: catfont;
             font-size: 1.5em;
+            padding-left: 10px;
+            position: absolute;
+            bottom: 7px;
+            left: 50px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
         }
 
-        p.artcorner,
-        p.behavior {
+        p.artcorner, p.catbehavior {
             text-align: right;
             font-family: catfont;
             font-size: 1.5em;
+            padding-right: 10px;
+            position: absolute;
+            bottom: 7px;
+            right: 50px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        p.cinemanights, p.artcorner, p.bookclub, p.catbehavior {
+            display: none;
+        }
+
+        .cinema:hover p.cinemanights,
+        .art:hover p.artcorner,
+        .book:hover p.bookclub,
+        .behavior:hover p.catbehavior {
+            display: block;
         }
     </style>
 
@@ -198,24 +215,30 @@
             <input type="submit" class="submit" value="Rezerviraj termin">
         </section>
 
-        <section class="ostalo">
+        <div class="ostalo">
+
             <h2>Ostale usluge</h2>
+        <section class="cinema">
             <img src="images/71041527_2430018617245698_2059807298015985664_o.jpg" width="300" alt="kino s mačkama" class="cinemanights">
-            <img src="images/5-23-3-20-14-16-23m.jpg" width="300" alt="slika mačke" class="artcorner">
-            <br><br><br>
             <p class="cinemanights">Cat Cinema Nights</p>
-            <br>
+        </section>
+
+        <section class="art">
+            <img src="images/5-23-3-20-14-16-23m.jpg" width="300" alt="slika mačke" class="artcorner">
             <p class="artcorner">Cat Art Corner</p>
         </section>
 
-        <section class="ostalo2">
+        <section class="book">
             <img src="images/cat-reading-1240x852.jpg" width="300" alt="mačka čita knjigu" class="bookclub">
-            <img src="images/img-cat-behavior-header.jpg" width="300" alt="mačka prede" class="behavior">
-            <br><br><br><br><br><br>
             <p class="bookclub">Cat Book Club</p>
-            <br>
-            <p class="behavior">Cat Behavior Classes</p>
         </section>
+
+        <section class="behavior">
+            <img src="images/img-cat-behavior-header.jpg" width="300" alt="mačka prede" class="catbehavior">
+            <p class="catbehavior">Cat Behavior Classes</p>
+        </section>
+
+        </div>
     </main>
 
     <footer>

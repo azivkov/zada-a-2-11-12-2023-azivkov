@@ -9,35 +9,52 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        @font-face {
-            font-family: catfont;
-            src: url(fonts/meows-font/Meows-VGWjy.ttf);
-        }
-
-        main h1  {
-            font-family: catfont;
-            color: rgb(247, 165, 78);
-            font-size: 5rem;
-            margin: 0 0;
-            padding-top: 20px;
-            text-shadow: 0.3rem 0.3rem 0.5rem rgb(100, 65, 1);
-        }
 
         main section {
             background-color: rgb(238, 229, 215);
+            position: relative;
+        }
+
+        main section h1 {
+            font-family: catfont;
+            color: rgb(240, 161, 78);
+            font-size: 5rem;
+            margin: 0 0;
+            padding-top: 20px;
+            text-shadow: 0.3rem 0.3rem 0.2rem black;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        section img {
+            vertical-align: bottom;
         }
 
         main section p {
             font-family: catfont;
             font-style: italic;
             font-weight: 800;
-            font-size: 1.2rem;
-            color: rgb(95, 84, 84);
+            font-size: 1.8rem;
+            width: 100%;
+            color: white;
+            background-color: rgb(73, 73, 73);
+            position: absolute;
+            top: 90.4%;
+            display: none;
         }
 
-        section img {
-            vertical-align: bottom;
+        section:hover {
+            filter: brightness(110%);
         }
+
+        section:hover p {
+            display: block;
+        }
+
+
     </style>
 </head>
 
@@ -72,7 +89,7 @@
         <section>
             <h1>Dobrodošli u Cat Cafe!</h1>
             <p>Ovo je cafe za sve ljubitelje mačaka - dođite i opustite se!</p>
-            <img src="images/image2.jpg" alt="Slika mačke u cat cafe-u" title="Cat cafe" width="991px">
+            <img src="images/image.jpg" alt="Slika mačke u cat cafe-u" title="Cat cafe" width="991px">
         </section>
     </main>
 

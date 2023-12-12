@@ -92,6 +92,10 @@ a.socmedia:hover {
     background-color: rgb(243, 199, 117);
 }
 
+a.socmedia {
+    margin: 25px;
+}
+
 @font-face {
     font-family: catfont;
     src: url(fonts/meows-font/Meows-VGWjy.ttf);
